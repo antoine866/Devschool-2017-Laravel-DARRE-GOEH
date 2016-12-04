@@ -76,6 +76,8 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+                    <br>
+                    {!! '<strong>Rendu GOEH-DARRE</strong>' !!}
                 </div>
 
                 <div class="links">
