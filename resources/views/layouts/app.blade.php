@@ -15,7 +15,7 @@
 
     <!-- Scripts -->
     <script>
-        window.Laravel = <?php echo json_encode([
+        window.Laravel =<?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
@@ -48,6 +48,12 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{{route('post.index') }}">Liste des évènements</a></li>
+                        <li><a href="">Liste des articles</a></li>
+                        @if(Auth::check())
+                        <li><a href="{{route ('post.create') }}">Publier un article</a></li>
+                        @endif
+
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ url('/login') }}">Login</a></li>
