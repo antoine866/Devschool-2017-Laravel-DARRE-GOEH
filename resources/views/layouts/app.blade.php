@@ -49,7 +49,9 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{route('post.index') }}">Liste des évènements</a></li>
-                        <li><a href="">Publier un évènement</a></li>
+                        @if(Auth::check())
+                        <li><a href="{{route('post.create')}}">Publier un évènement</a></li>
+                        @endif
                         <li><a href="">Liste des articles</a></li>
                         @if(Auth::check())
                         <li><a href="{{route ('post.create') }}">Publier un article</a></li>

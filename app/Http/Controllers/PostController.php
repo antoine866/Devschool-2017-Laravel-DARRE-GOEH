@@ -13,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return view('posts.index', compact('post'));
     }
 
     /**
@@ -23,7 +23,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -45,7 +45,7 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('posts.show', compact('post'));
     }
 
     /**
@@ -56,7 +56,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('posts.edit', compact('post'));
     }
 
     /**
