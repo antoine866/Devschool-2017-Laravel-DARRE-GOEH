@@ -14,7 +14,7 @@
                         <strong>Auteur : {{$post->user->name}}</strong>
                         <br>
 
-                        @if(Auth::check() && Auth::user()->isAdmin)
+                        @if(Auth::check())
 
                             <a href="{{ route('post.edit', $post->id) }}">Modifier</a>
 
